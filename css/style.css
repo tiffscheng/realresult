@@ -1,0 +1,363 @@
+/* Animate Import */
+@import url('animate.css');
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+@font-face {
+    font-family: 'TV NordEF Bold Condensed';
+    src: url('fonts/Elsner+Flake - TV NordEF Bold Con.otf') format('opentype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'TV NordEF Light Condensed';
+    src: url('fonts/Elsner+Flake - TV NordEF Light Con.otf') format('opentype');
+    font-weight: normal;
+}
+
+/* General */
+body {
+    color: #666666;
+    font-family: 'Roboto Condensed',sans-serif;
+}
+
+body p {
+    font-family: 'Roboto Condensed',sans-serif;
+    font-size: 12pt;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto Condensed',sans-serif;
+    line-height: 1.2em;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+h1, h3 {
+    font-weight: bold;
+    letter-spacing: -.01em;
+}
+
+h1{
+    font-size: 20pt;
+}
+
+h2 {
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14pt;
+}
+
+a, a:hover {
+    color: #ce1141;
+    text-decoration: none;
+}
+
+ul{
+    list-style: square;
+}
+
+li{
+    margin-left: -20px;
+    margin-bottom: 1em;
+    padding-right: 60px;
+}
+
+.btn-primary {
+    background-color: #ce1141;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ce1141;
+}
+
+.form-control {
+    transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+}
+
+.form-control:focus {
+    border-color: #666;
+}
+
+/* Custom Class */
+.background-img {
+    object-fit: cover;
+    position: relative;
+    width: 100%;
+}
+
+.center-div {
+    margin: 0 auto;
+}
+
+.center-v {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+span.title-line {
+    border-top: 1px solid #fff;
+    content: '';
+    display: inline-block;
+    padding-bottom: .25rem;
+    margin: 0 .5em;
+    width: 7%;
+}
+
+/* Accordion */
+.panel-title {
+    border-top: 1px solid #3d3d3d;
+    font-size: 14pt;
+    font-weight: bold;
+    padding: 7px 0;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.panel-heading .accordion-toggle:after {
+    border: 1px solid #3d3d3d;
+    content: url('../images/icons/minus.png');
+    float: right;
+    margin-top: -8px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-weight: normal;
+    color: #3d3d3d;
+}
+.panel a.collapsed .accordion-toggle:after {
+    border: 1px solid #3d3d3d;
+    /* symbol for "collapsed" panels */
+    content: url('../images/icons/plus.png');
+    margin-top: -8px;
+    width: 27px;
+    height: 27px;
+    text-align: center;
+    font-weight: normal;
+    color: #3d3d3d;
+}
+
+.panel-body {
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+
+.panel {
+    opacity: 0;
+}
+
+.panel:nth-child(2) {
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -o-animation-delay: .1s;
+}
+
+.panel:nth-child(3) {
+    animation-delay: .2s;
+    -webkit-animation-delay: .2s;
+    -moz-animation-delay: .2s;
+    -o-animation-delay: .2s;
+}
+
+/* Progressbars */
+.well-details h3{
+    font-size: 12pt;
+    margin: 2px 0;
+    text-transform: uppercase;
+}
+.well-details .progress{
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+
+.well-details .progress-bar{
+    animation: progress 2s ease-in forwards;
+    -webkit-animation: progress 2s ease-in forwards;
+    -moz-animation: progress 2s ease-in forwards;
+    -o-animation: progress 2s ease-in forwards;
+    background-color: #527a8a;
+}
+
+@keyframes progress {
+    from {
+        width: 0;
+    }
+}
+
+/* Sections */
+section {
+    padding: 20px;
+}
+
+section .container {
+    max-width: 1000px;
+}
+
+div#sticky-header {
+    position: fixed;
+    z-index: 200;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    max-width: 1000px;
+    padding: 0 15px;
+}
+
+div#sticky-header img{
+    max-width: 1000px;
+}
+
+section#hero {
+    background: #555 url('../images/Image---Header2.jpg') no-repeat fixed top center;
+    background-size: cover;
+    color: #fff;
+    min-height: 400px;
+    max-height: 414px;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+section#hero h2 {
+    font-size: 16pt;
+}
+
+section#hero .text-block {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 20px;
+}
+
+section#hero .text-block .animated{
+    animation-duration: .7s;
+    -webkit-animation-duration: .7s;
+    -moz-animation-duration: .7s;
+    -o-animation-duration: .7s;
+}
+
+section#snippets {
+    background-color: #eee;
+    text-transform: capitalize;
+}
+
+section#snippets h3{
+    border-bottom: 1px solid #373a36;
+    color: #ce1141;
+    font-size: 14pt;
+    text-transform: uppercase;
+}
+
+section#snippets p.animated{
+    animation-delay: .1s;
+    -webkit-animation-delay: .1s;
+    -moz-animation-delay: .1s;
+    -o-animation-delay: .1s;
+}
+
+section#overview {
+    /*color: #527a8a;*/
+}
+
+section#highlights {
+    background: #ce1141 url('../images/Image - Value Highlights.jpg') no-repeat center;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+section#highlights h4{
+    font-size: 11pt;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+section#highlights .container {
+    padding: 75px 15px;
+    max-width: 800px;
+}
+
+section#highlights h1{
+    font-size: 24pt;
+}
+
+section#highlights h2 {
+    font-size: 12pt;
+}
+
+section#highlights .square{
+    background-color: rgba(255,255,255,0.08);
+    border: 1px solid #fff;
+    height: 180px;
+    width: 180px;
+    text-align: center;
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+    section#highlights .square{
+        width: 75%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    section#highlights .square{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+section#details {
+    background-color: #eee;
+}
+
+section#details .container {
+    padding: 60px 15px;
+}
+
+section#cta-block {
+    background: url('../images/Image - Value To Customer .jpg') no-repeat center;
+    background-size: length;
+    color: #414141;
+    height: 500px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+}
+
+section#cta-block .text-block {
+    width: 50%;
+    margin-top: 10%;
+}
+
+@media (max-width: 576px) {
+    section#cta-block .text-block {
+        width: 75%
+    }
+}
+
+section#cta-block h1 {
+    font-size: 24pt;
+    font-weight: normal;
+    text-transform: none;
+}
+section#cta-block h2 {
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+section#contact {
+    padding: 60px 15px;
+}
